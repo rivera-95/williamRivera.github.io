@@ -1,7 +1,7 @@
 function setup() {
-	
-	createCanvas(windowWidth, windowHeight);
-		
+	let canvas
+	=createCanvas(windowWidth, windowHeight);
+		canvas.style("z-index",-1);
 }
 
 function draw() {
@@ -29,23 +29,26 @@ texto();
 	
 	
 
-
 	
-}
-
+	
 	textSize(20);
 	
 	fill(0,0,0,190);
-	//text("open processing ", width/2, height - 9*(height/11) );
+	
 	fill(100,180,210,80);
 	ellipse(width/2,height - 8.6*(height/11)-30, 260+random(15),90+random(15));
 	
 	fill(0,0,0,190);
-	//text("GitHub", width-300, height - 9*(height/11));
+	
 	fill(100,180,210,80);
 	ellipse(width-300,height - 8.6*(height/11)-30,100+random(15),60+random(15));
-	
-	
-	
-	
-	
+		
+}
+ 
+function windowResized(){
+    resizeCanvas (windowWidth,windowHeight);
+}
+
+
+
+

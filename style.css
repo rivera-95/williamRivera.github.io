@@ -5,3 +5,17 @@ html, body {
 canvas {
   display: block;
 }
+a{
+    background: green;
+}
+.link1 {
+    border-style: none;
+        color:White;
+    
+    background: Transparent;
+   
+    text-decoration-color: Transparent;
+    position: fixed;
+  top: 250px;
+    left: 250px;
+}
